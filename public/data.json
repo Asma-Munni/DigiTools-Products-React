@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Kit",
+    "description": "Perfect for beginners to create professional resumes quickly.",
+    "price": "$9",
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["20+ templates", "Basic ATS optimization", "Export to PDF"],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder with premium templates and AI suggestions.",
+    "price": "$19/MO",
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "AI suggestions", "ATS optimization", "Export to PDF & Word"],
+    "icon": "Sparkles"
+  },
+  {
+    "id": 3,
+    "name": "Career Growth Plan",
+    "description": "Monthly plan to improve your career profile and skills.",
+    "price": "$15/MO",
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": ["Skill tracking", "Weekly goals", "Progress reports"],
+    "icon": "TrendingUp"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Builder",
+    "description": "Create stunning personal portfolios with ease.",
+    "price": "$29",
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Custom domains", "Responsive design", "Drag & drop editor"],
+    "icon": "Layout"
+  },
+  {
+    "id": 5,
+    "name": "Job Tracker Pro",
+    "description": "Track all your job applications in one place.",
+    "price": "$12/MO",
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Application tracking", "Interview reminders", "Company notes"],
+    "icon": "ClipboardList"
+  },
+  {
+    "id": 6,
+    "name": "Ultimate Career Bundle",
+    "description": "All-in-one package for job seekers and professionals.",
+    "price": "$99/YR",
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": ["Resume builder", "Portfolio builder", "Job tracker", "Interview prep"],
+    "icon": "Package"
+  }
+]
