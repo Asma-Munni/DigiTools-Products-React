@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import writtingImg from '../../../assets/writting.png'
 import checkImg from '../../../assets/Check.png'
 
 
-const Cart = ({cart}) => {
+
+const Cart = ({cart, selectedCarts,setSelectedCarts}) => {
+    const [isAdded, setIsAdded] = useState(false);
+
+const handleAddToCart = (item) => {
+  setSelectedCarts([...selectedCarts, item]);
+};
+
+
+
+
     return (
         <div>
             <div className='border border-2 border-gray-200 rounded-xl p-2 shadow-lg relative space-y-2 h-full'>
@@ -35,7 +45,23 @@ const Cart = ({cart}) => {
                     ))
                    }
                 </div>
-                <button className="btn btn-active bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd] rounded-4xl text-white w-full">Buy Now</button>
+                <button 
+                onClick=
+                {()=> {
+                    setIsAdded(true);
+                   
+                    handleAddToCart(cart)
+                 alert(`${cart.name} is Added`);
+                 
+                }
+                }
+                
+                className= {`btn btn-active  rounded-xl text-white w-full
+                    
+                ${isAdded ===true ? 'bg-green-700' 
+                : 'bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd]'}    
+                `}
+                >{isAdded=== true ? 'Added to Cart' : 'Buy Now'}</button>
             </div>
         </div>
     );

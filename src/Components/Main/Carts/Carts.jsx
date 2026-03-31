@@ -10,8 +10,14 @@ const Carts = ({ cartPromise }) => {
     cartPromise.then(data => setCarts(data));
   }, [cartPromise]);
 
+  const [selectedCarts, setSelectedCarts]=useState([]);
+
+  
+
+
+
   return (
-    <div className='container mx-auto px-20 mb-20'>
+    <div className='container mx-auto px-20 mb-20 bg-[#f9fafc]'>
       <div className='text-center space-y-2 mt-20 mb-8'>
         <h3 className='font-extrabold text-[3rem]'>Premium Digital Tools</h3> 
         <p className='text-[#627382]'>
@@ -45,11 +51,14 @@ const Carts = ({ cartPromise }) => {
       </div>
 
       {productType === 'Products'
-        ? <AvailableProducts carts={carts} />
-        : <SelectedCarts />
+        ? <AvailableProducts 
+        carts={carts}
+        setSelectedCarts={setSelectedCarts}
+        selectedCarts={selectedCarts} />
+        : <SelectedCarts selectedCarts={selectedCarts} />
       }
     </div>
   );
 };
 
-export default Carts;
+export default Carts;  
