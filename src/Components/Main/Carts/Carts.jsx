@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import AvailableProducts from '../../AvailableProducts/AvailableProducts';
 import SelectedCarts from '../../SelectedCarts/SelectedCarts';
 
-const Carts = ({ cartPromise }) => {
+const Carts = ({ cartPromise, selectedCarts, setSelectedCarts}) => {
   const [carts, setCarts] = useState([]);
   const [productType, setProductType] = useState("Products");
 
@@ -10,7 +10,7 @@ const Carts = ({ cartPromise }) => {
     cartPromise.then(data => setCarts(data));
   }, [cartPromise]);
 
-  const [selectedCarts, setSelectedCarts]=useState([]);
+ // const [selectedCarts, setSelectedCarts]=useState([]);
 
   
 
@@ -45,7 +45,7 @@ const Carts = ({ cartPromise }) => {
                 : 'btn-outline'
             }`}
           >
-            Cart(2)
+            Cart ({selectedCarts.length})
           </button>
         </div>
       </div>

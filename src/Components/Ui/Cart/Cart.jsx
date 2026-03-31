@@ -16,7 +16,7 @@ const handleAddToCart = (item) => {
 
     return (
         <div>
-            <div className='border border-2 border-gray-200 rounded-xl p-2 shadow-lg relative space-y-2 h-full'>
+            <div className='border border-2 border-gray-200 rounded-xl p-2 shadow-lg relative space-y-2 h-full w-full'>
                 <button 
   className={`btn rounded-2xl text-left absolute top-5 right-5 cursor-pointer
   ${cart.tag === "best seller" 
@@ -56,7 +56,7 @@ const handleAddToCart = (item) => {
                 }
                 }
                 
-                className= {`btn btn-active  rounded-xl text-white w-full
+                className= {`btn btn-active  rounded-xl text-white w-full mb-0
                     
                 ${isAdded ===true ? 'bg-green-700' 
                 : 'bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd]'}    
