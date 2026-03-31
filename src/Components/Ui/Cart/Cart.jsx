@@ -6,7 +6,7 @@ import checkImg from '../../../assets/Check.png'
 const Cart = ({cart}) => {
     return (
         <div>
-            <div className='border border-gray-400 rounded-xl p-2 shadow-lg relative space-y-2 h-full'>
+            <div className='border border-2 border-gray-200 rounded-xl p-2 shadow-lg relative space-y-2 h-full'>
                 <button 
   className={`btn rounded-2xl text-left absolute top-5 right-5 cursor-pointer
   ${cart.tag === "best seller" 

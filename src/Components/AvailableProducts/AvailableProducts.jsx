@@ -14,8 +14,6 @@ const AvailableProducts = ({carts}) => {
         }  
             </div>
         
-
-
           
         </div>
     );
