@@ -55,7 +55,9 @@ const Carts = ({ cartPromise, selectedCarts, setSelectedCarts}) => {
         carts={carts}
         setSelectedCarts={setSelectedCarts}
         selectedCarts={selectedCarts} />
-        : <SelectedCarts selectedCarts={selectedCarts} />
+        : <SelectedCarts 
+        selectedCarts={selectedCarts} 
+        setSelectedCarts={setSelectedCarts}/>
       }
     </div>
   );

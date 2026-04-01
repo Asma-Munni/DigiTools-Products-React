@@ -6,6 +6,7 @@ import Carts from './Components/Main/Carts/Carts'
 import Navbar from './Components/Navbar/Navbar'
 import Rating from './Components/Rating/Rating'
 import Started from './Components/Started/Started'
+import SimplePricing from './Components/SimplePricing/SimplePricing'
 
 
 const fetchCart = async () => {
@@ -32,6 +33,7 @@ function App() {
        ></Carts>
     </Suspense>
     <Started></Started>
+    <SimplePricing></SimplePricing>
     
     
 

@@ -8,7 +8,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["20+ templates", "Basic ATS optimization", "Export to PDF"],
-    "icon": "FileText"
+    "icon": "https://i.ibb.co.com/ZpqxQdtc/group7.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["100+ templates", "AI suggestions", "ATS optimization", "Export to PDF & Word"],
-    "icon": "Sparkles"
+    "icon": "https://i.ibb.co.com/mCsPSTr2/modern-businesswoman-with-clipboard-outdoors-23-2148002250.jpg"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "best seller",
     "tagType": "best",
     "features": ["Skill tracking", "Weekly goals", "Progress reports"],
-    "icon": "TrendingUp"
+    "icon": "https://i.ibb.co.com/4wz2qM02/website-setup-concept-landing-page-23-2148299323.jpg"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Custom domains", "Responsive design", "Drag & drop editor"],
-    "icon": "Layout"
+    "icon": "https://i.ibb.co.com/Pv0PXftW/successful-businessman-student-with-papers.jpg"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Application tracking", "Interview reminders", "Company notes"],
-    "icon": "ClipboardList"
+    "icon": "https://i.ibb.co.com/LzR9Jprn/joy-sunshine-signing-bargain-urban.jpg"
   },
   {
     "id": 6,
@@ -63,6 +63,6 @@
     "tag": "best seller",
     "tagType": "best",
     "features": ["Resume builder", "Portfolio builder", "Job tracker", "Interview prep"],
-    "icon": "Package"
+    "icon": "https://i.ibb.co.com/XxCVWphD/writting.png"
   }
 ]
