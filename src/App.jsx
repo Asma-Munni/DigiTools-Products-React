@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Rating from './Components/Rating/Rating'
 import Started from './Components/Started/Started'
 import SimplePricing from './Components/SimplePricing/SimplePricing'
+import Workflow from './Components/Workflow/Workflow'
 
 
 const fetchCart = async () => {
@@ -34,6 +35,7 @@ function App() {
     </Suspense>
     <Started></Started>
     <SimplePricing></SimplePricing>
+    <Workflow></Workflow>
     
     
 
