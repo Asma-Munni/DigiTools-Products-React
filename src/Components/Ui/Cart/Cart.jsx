@@ -21,10 +21,11 @@ const Cart = ({ cart, selectedCarts, setSelectedCarts }) => {
   };
 
   return (
-    <div className='border border-2 border-gray-200 rounded-xl p-3 shadow-lg relative space-y-3 h-full'>
+    <div className='border border-2 border-gray-200 rounded-xl p-3 shadow-lg relative space-y-3 h-full flex flex-col items-center justify-between'>
 
       
-      <button 
+     <div>
+       <button 
         className={`btn rounded-2xl text-left absolute top-5 right-5 cursor-pointer
         ${cart.tag === "best seller" 
           ? 'bg-[#fef3c6] text-[#bb4d00]' 
@@ -62,6 +63,7 @@ const Cart = ({ cart, selectedCarts, setSelectedCarts }) => {
         }
       </div>
 
+     </div>
       
       <button 
         onClick={handleClick}

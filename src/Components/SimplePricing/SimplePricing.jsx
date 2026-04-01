@@ -18,7 +18,7 @@ const SimplePricing = () => {
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 p-10 max-w-6xl mx-auto'>
 
                     
-                    <div className='border border-gray-200 rounded-xl p-5 shadow-md space-y-3 bg-white '>
+                    <div className='border border-gray-200 rounded-xl p-5 shadow-md space-y-3 bg-white flex flex-col justify-center items-center lg:items-start'>
                         <h3 className='text-lg font-semibold'>Starter</h3>
                         <p className='text-sm text-gray-500'>Perfect for getting started</p>
 
@@ -37,9 +37,9 @@ const SimplePricing = () => {
                     </div>
 
                     
-                    <div className='border border-gray-200 rounded-xl p-5 shadow-lg space-y-3 relative bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd] text-white scale-105'>
+                    <div className='border border-gray-200 rounded-xl p-5 shadow-lg space-y-3 relative bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd] text-white scale-105 flex flex-col justify-center items-center lg:items-start'>
                         
-                        {/* Badge */}
+                        
                         <button className='absolute -top-3 left-1/2 -translate-x-1/2 bg-yellow-400 text-black px-3 py-1 rounded-full text-sm'>
                             Most Popular
                         </button>
@@ -64,7 +64,7 @@ const SimplePricing = () => {
                     </div>
 
                     
-                    <div className='border border-gray-200 rounded-xl p-5 shadow-md space-y-3 bg-white'>
+                    <div className='border border-gray-200 rounded-xl p-5 shadow-md space-y-3 bg-white flex flex-col justify-center items-center lg:items-start'>
                         <h3 className='text-lg font-semibold'>Enterprise</h3>
                         <p className='text-sm text-gray-500'>For teams and businesses</p>
 

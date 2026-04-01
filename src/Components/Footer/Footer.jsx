@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="bg-[#101727] text-white py-12 px-4 md:px-6 mt-0 text-center">
       
 
-      <div className=" mx-auto flex flex-col md:flex-row md:justify-between  gap-10">
+      <div className=" mx-auto flex flex-wrap md:flex-row md:justify-between  gap-10">
         
         <div className="flex-1">
           <h1 className="text-2xl md:text-3xl font-bold">DigiTools</h1>
@@ -53,7 +53,7 @@ const Footer = () => {
 
         <div className="flex-1">
           <h2 className="font-semibold mb-2">Social Links</h2>
-          <div className="flex gap-3 text-xl mt-1">
+          <div className="flex gap-3 text-xl mt-1 flex items-center justify-center">
             <FaYoutube />
             <FaFacebookF />
             <FaXTwitter />
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Divider */}
+      
       <div className="border-t border-gray-700 my-6"></div>
 
       
