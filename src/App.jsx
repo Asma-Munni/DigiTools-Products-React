@@ -8,6 +8,8 @@ import Rating from './Components/Rating/Rating'
 import Started from './Components/Started/Started'
 import SimplePricing from './Components/SimplePricing/SimplePricing'
 import Workflow from './Components/Workflow/Workflow'
+import { Toaster } from 'react-hot-toast'
+import Footer from './Components/Footer/Footer'
 
 
 const fetchCart = async () => {
@@ -22,7 +24,7 @@ function App() {
   const [selectedCarts, setSelectedCarts] = useState([]);
   return (
     <>
-     
+      <Toaster />
     <Navbar selectedCarts={selectedCarts}></Navbar>  
     <Banner></Banner>
     <Rating></Rating> 
@@ -36,6 +38,7 @@ function App() {
     <Started></Started>
     <SimplePricing></SimplePricing>
     <Workflow></Workflow>
+    <Footer></Footer>
     
     
 

@@ -4,7 +4,7 @@ const Workflow = () => {
     return (
         <div className='bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd]'>
 
-            <div className=" my-5 space-y-2 p-5  text-center">
+            <div className=" space-y-2 p-5  text-center">
 
                 <h2 className='text-[#ffffff] text-2xl font-bold pt-15'>Ready to Transform Your Workflow?</h2>
                 <p className='text-[#ffffff]'>Join thousands of professionals who are already using Digitools to work smarter.Start your free trial today. <br />

@@ -13,8 +13,8 @@ const Started = () => {
                 <p className='text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
                </div>
 
-               <div className='md:flex justify-between gap-8 px-20 mt-8'>
-                <div className='border border-gray-200 shadow-lg rounded-2xl relative '>
+               <div className='flex flex-col md:flex justify-between gap-5 px-20 mt-8'>
+                <div className='border border-gray-200 shadow-sm rounded-2xl relative  '>
                  <button className="btn btn-active bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd] rounded-full text-white absolute top-3 right-3">01</button> 
                  <div className='flex flex-col items-center justify-center py-20 space-y-2 text-center p-4'>
                     <img src={groupImg} alt="" /> 

@@ -18,7 +18,7 @@ const SimplePricing = () => {
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 p-10 max-w-6xl mx-auto'>
 
                     
-                    <div className='border border-gray-200 rounded-xl p-5 shadow-md space-y-3 bg-white'>
+                    <div className='border border-gray-200 rounded-xl p-5 shadow-md space-y-3 bg-white '>
                         <h3 className='text-lg font-semibold'>Starter</h3>
                         <p className='text-sm text-gray-500'>Perfect for getting started</p>
 

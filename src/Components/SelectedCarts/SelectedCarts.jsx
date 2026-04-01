@@ -1,6 +1,7 @@
 import React from 'react';
 import cartImg from '../../assets/cart.png'
 import { MdDelete } from 'react-icons/md';
+import toast from 'react-hot-toast';
 
 const SelectedCarts = ({ selectedCarts, setSelectedCarts }) => {
 
@@ -9,6 +10,12 @@ const handleDeletedCart = (cart) =>{
     const filteredCarts = selectedCarts.filter((selectedCart)=> selectedCart.id != cart.id);
      setSelectedCarts(filteredCarts);
 };
+
+
+const totalPrice = selectedCarts.reduce((total, item) => {
+  const number = item.price.replace(/[^0-9.]/g, ""); 
+  return total + Number(number);
+}, 0);
 
 
 
@@ -50,6 +57,32 @@ const handleDeletedCart = (cart) =>{
           ))
         )
       }
+
+     
+  {
+  selectedCarts.length > 0 && (
+    <div className='mt-6 border-t pt-4 space-y-3'>
+
+      {/* Total Row */}
+      <div className='flex justify-between items-center'>
+        <h3 className='text-xl font-bold'>Total</h3>
+        <h3 className='text-xl font-bold'>$ {totalPrice}</h3>
+      </div>
+
+      {/* Button Row */}
+      <button 
+        onClick={() => {
+          setSelectedCarts([]);
+          toast.success("Checkout complete 🎉");
+        }}
+        className='btn w-full bg-gradient-to-r from-[#4f39f6] to-[#8c7dfd] text-white rounded-xl'
+      >
+        Proceed to Checkout
+      </button>
+
+    </div>
+  )
+}
 
     </div>
   );

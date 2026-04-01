@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import writtingImg from '../../../assets/writting.png';
+
 import checkImg from '../../../assets/Check.png';
+import toast from 'react-hot-toast';
 
 const Cart = ({ cart, selectedCarts, setSelectedCarts }) => {
   const [isAdded, setIsAdded] = useState(false);
@@ -12,8 +13,11 @@ const Cart = ({ cart, selectedCarts, setSelectedCarts }) => {
     if (!exists) {
       setSelectedCarts([...selectedCarts, cart]);
       setIsAdded(true);
-      alert(`${cart.name} is Added`);
-    }
+      toast(`${cart.name} added`); 
+    } else{
+       toast.error("Already added!");
+    } 
+    
   };
 
   return (
